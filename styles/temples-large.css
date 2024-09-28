@@ -1,0 +1,24 @@
+/* temples-large.css */
+
+/* Media query for larger screens */
+@media (min-width: 640px) {
+    nav ul {
+        display: flex; /* Enable Flexbox */
+    }
+
+    nav ul li {
+        flex: 1; /* Make each item flex */
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    }
+
+    figure {
+        margin: 0; /* Ensure figures have no extra margin */
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}

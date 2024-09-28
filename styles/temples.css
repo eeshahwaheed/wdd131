@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    color: white; 
+}
+
+header {
+    background: #053d2d; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Merriweather', serif; /* Heading font */
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #f9fdff; /* Light background for nav */
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none; /* No bullets */
+    text-align: center; /* Center the list */
+    padding: 0;
+}
+
+nav a {
+    display: block; /* Make the entire area clickable */
+    color: #111010; /* Dark text */
+    text-align: center; /* Center text */
+    padding: 1rem; /* Padding for spacing */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+    color: yellow; /* Change text color on hover */
+}
+
+.active {
+    color: yellow; /* Highlight active link */
+}
+
+main {
+    margin: 20px auto; /* Center the main element with margin */
+    max-width: 800px; /* Limit width of main content */
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: 1fr; /* One column on mobile */
+    gap: 20px; /* Space between grid items */
+}
+
+figure {
+    margin: 0; /* Remove margin from figures */
+}
+
+figure img {
+    width: 100%; /* Make the image take full width of the figure */
+    height: 500px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+    border-radius: 8px; /* Optional: adds a rounded effect */
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 400; /* Regular weight for captions */
+    color: #666; /* Grey color for less emphasis */
+}
+
+footer {
+    background-color: #053d2d;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #fffdfd;
+    padding: 1rem;
+}
+
+h2 {
+    color: #111010;
+    text-align: center;
+}
+
