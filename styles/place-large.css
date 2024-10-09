@@ -20,35 +20,35 @@ header {
     padding: 15px 0;
 }
 
-.hero-container {
-    position: relative; /* Allow positioning of overlays within this container */
+#heroSection {
+    position: relative; /* Needed for absolute positioning of overlays */
 }
 
 .hero-image {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .data-overlay {
     position: absolute;
-    top: 20px; /* Positioned from the top */
-    left: 20px; /* Positioned on the left */
+    top: 20px; /* Top left corner */
+    left: 20px;
     background: var(--overlay-bg);
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
-    z-index: 10; /* Ensure it appears above the image */
+    z-index: 10; /* Ensures it stays above the image */
 }
 
 .weather-overlay {
-    position: absolute;
-    bottom: 20px; /* Position it near the bottom of the hero image */
-    right: 20px; /* Positioned on the right */
+    position: absolute; /* Ensure it's absolutely positioned */
+    bottom: 20px; /* Bottom right corner */
+    right: 20px;
     background: var(--overlay-bg);
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
-    z-index: 10; /* Ensure it appears above the image */
+    z-index: 10; /* Ensures it stays above the image */
 }
 
 footer {
@@ -57,11 +57,4 @@ footer {
     padding: 10px 0;
 }
 
-/* Media Queries for Mobile */
-@media (max-width: 768px) {
-    .data-overlay, .weather-overlay {
-        position: relative; /* Stack vertically on mobile */
-        width: 90%; /* Full width on mobile */
-        margin: 10px auto; /* Center on mobile */
-    }
-}
+
