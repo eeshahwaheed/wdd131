@@ -1,0 +1,55 @@
+:root {
+    --primary-color: #35424a;
+    --background-color: #f4f4f4;
+    --text-color: white;
+    --overlay-bg: rgba(255, 255, 255, 0.9);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.data-overlay, .weather-overlay {
+    background: var(--overlay-bg);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#additionalInfoSection {
+    padding: 20px;
+    background: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+    /* Ensure mobile styles don't apply in wider view */
+    #heroSection {
+        display: block; /* Optional, based on layout needs */
+    }
+}

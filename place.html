@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <title>Place</title>
+    <meta name="description" content="Explore Pakistan, a country rich in culture and history.">
+    <meta name="author" content="Eeshah Waheed">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="placeTitle">Pakistan</h1>
+    </header>
+
+    <main>
+        <section id="heroSection">
+            <div class="hero-container">
+                <picture>
+                    <source srcset="images/pexels.jpg" media="(max-width: 500px)">
+                    <img class="hero-image" src="images/pexels.jpg" alt="Pakistan" loading="quick">
+                </picture>
+        
+                <div class="data-overlay">
+                    <h2>Data</h2>
+                    <div class="data-item">Area: 796,095 sq km</div>
+                    <div class="data-item">Population: 235.8 million</div>
+                    <div class="data-item">Capital: Islamabad</div>
+                    <div class="data-item">Languages: Urdu, English</div>
+                    <div class="data-item">Currency: Pakistani Rupee</div>
+                    <div class="data-item">Time zone: GMT+5</div>
+                    <div class="data-item">Calling code: +92</div>
+                    <div class="data-item">Internet TLD: .pk</div>
+                </div>
+                
+                <div class="weather-overlay">
+                    <h2>Weather</h2>
+                    <div class="weather-data">Temperature: 5 °C</div>
+                    <div class="weather-data">Condition: Clear</div>
+                    <div class="weather-data">Wind: 10 km/h</div>
+                    <p id="windChill">Wind Chill: </p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer> 
+        <p>&copy; <span id="currentyear"></span> 🖤 Eeshah Waheed 🖤 Islamabad, Pakistan</p>
+        <p id="lastModified"></p> 
+    </footer>
+</body>
+</html>

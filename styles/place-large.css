@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #35424a;
+    --background-color: #f4f4f4;
+    --text-color: white;
+    --overlay-bg: rgba(255, 255, 255, 0.8);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px 0;
+}
+
+.hero-container {
+    position: relative; /* Allow positioning of overlays within this container */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.data-overlay {
+    position: absolute;
+    top: 20px; /* Positioned from the top */
+    left: 20px; /* Positioned on the left */
+    background: var(--overlay-bg);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+.weather-overlay {
+    position: absolute;
+    bottom: 20px; /* Position it near the bottom of the hero image */
+    right: 20px; /* Positioned on the right */
+    background: var(--overlay-bg);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .data-overlay, .weather-overlay {
+        position: relative; /* Stack vertically on mobile */
+        width: 90%; /* Full width on mobile */
+        margin: 10px auto; /* Center on mobile */
+    }
+}
