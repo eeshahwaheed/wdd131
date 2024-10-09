@@ -1,56 +1,42 @@
-:root {
-    --primary-color: #35424a;
-    --background-color: #f4f4f4;
-    --text-color: white;
-    --overlay-bg: rgba(255, 255, 255, 0.8);
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
+/* Base styles for mobile-first design */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    text-align: center;
+    font-size: 16px; /* Base font size */
 }
 
-header {
-    background: var(--primary-color);
-    color: var(--text-color);
-    padding: 15px 0;
+header, footer {
+    padding: 10px 0; /* Adjust padding for mobile */
 }
 
-#heroSection {
-    margin-bottom: 10px; /* Space below the image */
-}
-
-.hero-image {
-    width: 100%;
-    height: auto; /* Maintains aspect ratio */
-}
-
-.data-overlay,
-.weather-overlay {
-    background: var(--overlay-bg);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    margin: 10px; /* Adds space around overlays */
-}
-
-
-footer {
-    background: var(--primary-color);
-    color: var(--text-color);
-    padding: 10px 0;
-}
-
-/* Mobile Styles */
+/* Mobile-specific styles */
 @media (max-width: 768px) {
-    .data-overlay,
-    .weather-overlay {
-        margin: 10px; /* Adjust margin for mobile */
-        padding: 8px; /* Reduced padding */
-        font-size: 14px; /* Smaller font size */
+    header {
+        font-size: 1.2rem; /* Smaller header font size */
+        padding: 10px 5px; /* Adjust padding */
     }
+
+    #heroSection {
+        position: relative;
+        overflow: hidden; /* Ensure no overflow */
+    }
+
+    .hero-image {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .data-overlay, .weather-overlay {
+        position: relative;
+        width: calc(100% - 40px); /* Adjust width for mobile */
+        left: 20px; /* Center alignment */
+        right: 20px; /* Center alignment */
+        padding: 10px; /* Reduced padding */
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .data-overlay{
+        margin-bottom: 50px;
+
+    }
+
+   
 }
