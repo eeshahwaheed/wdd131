@@ -27,18 +27,10 @@ header {
 
 .data-overlay, .weather-overlay {
     background: var(--overlay-bg);
-    padding: 10px;
     border-radius: 5px;
-    margin: 10px 0;
 }
 
-#additionalInfoSection {
-    padding: 20px;
-    background: white;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: var(--box-shadow);
-}
+
 
 footer {
     background: var(--primary-color);
