@@ -51,11 +51,12 @@ header {
     z-index: 10; 
 }
 
-
-.weather-icon {
-    font-size: 36px; /* Adjust the size of the icon */
-    margin-right: 10px; /* Space between icon and text */
+.weather-overlay h2::after {
+    content: " 🌥️"; /* Adding a cloud emoji after the title */
+    font-size: 24px; /* Adjust size of the emoji */
+    margin-left: 10px; /* Space between "Weather" and the icon */
 }
+
 
 footer {
     background: var(--primary-color);
