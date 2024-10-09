@@ -51,12 +51,10 @@ header {
     z-index: 10; 
 }
 
-.weather-overlay h2::after {
-    content: " 🌥️"; /* Adding a cloud emoji after the title */
-    font-size: 24px; /* Adjust size of the emoji */
-    margin-left: 10px; /* Space between "Weather" and the icon */
-}
 
+.weather-icon {
+    display: none; /* Hide both icons by default */
+}
 
 footer {
     background: var(--primary-color);
@@ -64,4 +62,15 @@ footer {
     padding: 10px 0;
 }
 
+@media (min-width: 769px) {
+    .weather-icon.emoji {
+        display: inline; /* Show the emoji on wider screens */
+        font-size: 24px; /* Adjust size as needed */
+        margin-left: 10px; /* Space from the heading */
+    }
+
+    .weather-icon.svg {
+        display: none; /* Hide the SVG icon on wider screens */
+    }
+}
 

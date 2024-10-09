@@ -36,4 +36,12 @@ header, footer {
 
     }
 
+    .weather-icon.svg {
+        display: block; /* Show the SVG icon on mobile */
+        width: 24px; /* Adjust size as needed */
+        height: auto;
+        margin-left: 10px; /* Space from the heading */
+    }
+
+
 }

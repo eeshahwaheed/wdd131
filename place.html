@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/place-large.css">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title> Counrty Page</title>
     <meta name="description" content="Explore Pakistan, a country rich in culture and history.">
     <meta name="author" content="Eeshah Waheed">
@@ -38,13 +40,18 @@
                 </div>
                 
                 <div class="weather-overlay">
-                    <h2>Weather</h2>
+                    <h2 id="weatherTitle">
+                        Weather
+                        <span class="weather-icon emoji">⛅</span> <!-- Emoji for wider view -->
+                        <img src="images/cloudicon.svg" alt="Weather icon" class="weather-icon svg" /> <!-- SVG for mobile view -->
+                    </h2>
                     <div class="weather-data">Temperature: 5 °C</div>
                     <div class="weather-data">Condition: Clear</div>
                     <div class="weather-data">Wind: 10 km/h</div>
-                    <div class="weather-data">Wind chill 10 km/h</div>
+                    <div class="weather-data">Wind chill: 10 km/h</div>
                     <p id="windChill"></p>
                 </div>
+                
             </div>
         </section>
         
