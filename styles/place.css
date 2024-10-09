@@ -1,36 +1,34 @@
-/* Base styles for mobile-first design */
 body {
-    font-size: 16px; /* Base font size */
+    font-size: 16px; 
 }
 
 header, footer {
-    padding: 10px 0; /* Adjust padding for mobile */
+    padding: 10px 0; 
 }
 
-/* Mobile-specific styles */
 @media (max-width: 768px) {
     header {
-        font-size: 1.2rem; /* Smaller header font size */
-        padding: 10px 5px; /* Adjust padding */
+        font-size: 1.2rem; 
+        padding: 10px 5px; 
     }
 
     #heroSection {
         position: relative;
-        overflow: hidden; /* Ensure no overflow */
+        overflow: hidden; 
     }
 
     .hero-image {
-        width: 100%; /* Full width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
 
     .data-overlay, .weather-overlay {
         position: relative;
-        width: calc(100% - 40px); /* Adjust width for mobile */
-        left: 20px; /* Center alignment */
-        right: 20px; /* Center alignment */
-        padding: 10px; /* Reduced padding */
-        font-size: 0.9rem; /* Smaller font size */
+        width: calc(100% - 40px); 
+        left: 20px; 
+        right: 20px; 
+        padding: 5px; 
+        font-size: 0.9rem; 
     }
 
     .data-overlay{
@@ -38,5 +36,4 @@ header, footer {
 
     }
 
-   
 }
