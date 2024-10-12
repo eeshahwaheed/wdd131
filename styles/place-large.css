@@ -53,7 +53,7 @@ header {
 
 
 .weather-icon {
-    display: none; /* Hide both icons by default */
+    display: none; 
 }
 
 footer {
@@ -64,16 +64,16 @@ footer {
 
 @media (min-width: 769px) {
     .weather-icon.emoji {
-        display: inline; /* Show the emoji on wider screens */
+        display: inline; 
     }
 
     .weather-icon.svg {
-        display: none; /* Hide the SVG icon on wider screens */
+        display: none; 
     }
 
     .weather-overlay h2::after {
        
-        font-size: 24px; /* Adjust size of the emoji */
-        margin-left: 10px; /* Space between "Weather" and the icon */
+        font-size: 24px; 
+        margin-left: 10px;
     }
 }
