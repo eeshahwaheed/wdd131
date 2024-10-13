@@ -1,22 +1,22 @@
 @media (min-width: 640px) {
     nav ul {
         display: flex; 
-        justify-content: center; /* Center the nav items */
+        justify-content: center; 
     }
 
     nav ul li {
-        flex: 1; /* Equal space for each nav item */
+        flex: 1; 
     }
 
     #temple-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns in wider views */
+        grid-template-columns: repeat(3, 1fr); 
     }
 
     figure {
-        margin: 0; /* Remove margin from figure elements */
+        margin: 0; 
     }
 
     footer {
-        font-size: 1em; /* Increase footer font size */
+        font-size: 1em; 
     }
 }

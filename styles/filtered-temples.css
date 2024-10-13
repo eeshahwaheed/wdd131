@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
     padding: 20px;
     background-color: #f9f9f9; 
-    color: #111010; /* Ensure text visibility */
+    color: #111010; 
 }
 
 header {
@@ -98,18 +98,18 @@ h2 {
 /* Mobile View */
 @media (max-width: 640px) {
     #temple-container {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-columns: 1fr; 
     }
 
     h1 {
-        font-size: 2em; /* Smaller heading for mobile */
+        font-size: 2em; 
     }
 
     nav a {
-        padding: 0.8rem; /* Smaller padding for mobile */
+        padding: 0.8rem; 
     }
 
     .temple-card {
-        padding: 15px; /* Adjust card padding for mobile */
+        padding: 15px; 
     }
 }
