@@ -92,7 +92,11 @@ h2 {
    text-align: center;
    margin-bottom: 10px;
 }
+h3 {
+    color: #111010;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+}
 /* Mobile View */
 @media (max-width: 640px) {
     #temple-container {
