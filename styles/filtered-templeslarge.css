@@ -1,0 +1,22 @@
+@media (min-width: 640px) {
+    nav ul {
+        display: flex; 
+        justify-content: center; /* Center the nav items */
+    }
+
+    nav ul li {
+        flex: 1; /* Equal space for each nav item */
+    }
+
+    #temple-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns in wider views */
+    }
+
+    figure {
+        margin: 0; /* Remove margin from figure elements */
+    }
+
+    footer {
+        font-size: 1em; /* Increase footer font size */
+    }
+}
