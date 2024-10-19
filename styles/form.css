@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:rgb(193, 154, 193);
+
+}
+
+header {
+    text-align: center;
+    background-color:purple;
+    color: #f9f9f9; 
+ 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color:#fafffa;
+    color:black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fafffa;
+}
+
+fieldset {
+    border: none; /* Removes the box line */
+    padding: 0; /* Removes padding */
+    margin: 0 0 15px 0; /* Space below fieldset */
+}
+
+fieldset label {
+    display: block; /* Arranges options in a column */
+    margin: 5px 0;
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+@media (max-width: 639px) {
+    
+}
