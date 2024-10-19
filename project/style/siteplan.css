@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    padding: 0 10px; /* Additional padding for mobile */
+    padding: 0 10px; 
 }
 
 h1 {
@@ -25,7 +25,7 @@ p, ul {
 }
 
 .wireframe img {
-    width: 100%; /* Full width for mobile */
+    width: 100%; 
     margin: 15px 0;
 }
 

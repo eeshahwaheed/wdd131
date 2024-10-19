@@ -7,12 +7,12 @@ body {
 }
 
 .container {
-    max-width: 800px; /* Centering the content */
+    max-width: 800px; 
     margin: auto;
 }
 
 h1, h2 {
-    color: #6A5ACD; /* Primary Color */
+    color: #6A5ACD; 
 }
 
 h1 {
@@ -34,7 +34,7 @@ ul {
 }
 
 .wireframe img {
-    width: 80%; /* Adjust as needed for desktop */
+    width: 80%; 
     margin: 20px 0;
 }
 
