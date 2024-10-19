@@ -43,13 +43,13 @@ input[type="submit"]:hover {
 }
 
 fieldset {
-    border: none; /* Removes the box line */
-    padding: 0; /* Removes padding */
-    margin: 0 0 15px 0; /* Space below fieldset */
+    border: none; 
+    padding: 0; 
+    margin: 0 0 15px 0; 
 }
 
 fieldset label {
-    display: block; /* Arranges options in a column */
+    display: block; 
     margin: 5px 0;
 }
 
@@ -60,7 +60,3 @@ footer {
     text-align: center;
 }
 
-
-@media (max-width: 639px) {
-    
-}
