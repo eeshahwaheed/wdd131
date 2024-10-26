@@ -41,7 +41,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: white; /* Link color */
     text-decoration: none;
     font-weight: 700;
 }
@@ -55,33 +55,21 @@ h1, h2 {
     padding: 20px;
 }
 
-.image-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.event-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
 }
 
-figure {
-    text-align: center;
-    margin: 15px;
-    background-color: #fff; /* Background for figures */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+.event-list li {
+    background-color: #fff; /* White background for event items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Space inside each event box */
+    margin: 10px 0; /* Space between events */
 }
 
-img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-a {
-    color: #6A5ACD; /* Primary color for links */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FF6347; /* Secondary color for hover effect */
+.event-list h3 {
+    color: #6A5ACD; /* Primary color for event titles */
 }
 
 footer {
@@ -93,10 +81,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-.tagline {
-    font-size: 1.2em; /* Adjust size as needed */
-    color: #FF6347; /* Use secondary color for emphasis */
-    margin-top: 10px; /* Space between logo and tagline */
-}
-

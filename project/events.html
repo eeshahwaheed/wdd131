@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/siteplan.css">
+    <link rel="stylesheet" href="style/events.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <title>Tales & Tea - Events</title>
@@ -13,10 +13,10 @@
 </head>
 <body>
     <header>
-        <h1>Tales & Tea</h1>
+        <h1><img src="image/logo.webp" alt="Tales & Tea Logo" class="logo"></h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="siteplan.html">Home</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
@@ -26,31 +26,34 @@
     
     <div class="container">
         <h2>Upcoming Events</h2>
-        <ul>
-            <li>
-                <strong>Book Discussion:</strong> "Book Title 1" <br>
-                Date: March 1, 2024 <br>
-                Time: 6:00 PM <br>
-                Location: Local Library Meeting Room
-            </li>
-            <li>
-                <strong>Author Event:</strong> Meet Author 1 <br>
-                Date: March 15, 2024 <br>
-                Time: 5:00 PM <br>
-                Location: Local Bookstore
-            </li>
-            <li>
-                <strong>Monthly Meetup:</strong> Open Discussion <br>
-                Date: March 22, 2024 <br>
-                Time: 7:00 PM <br>
-                Location: Coffee Shop
-            </li>
-        </ul>
+        <div class="event-list">
+            <div class="event-card">
+                <h3>📚 Book Discussion: "Book Title 1"</h3>
+                <p><strong>Date:</strong> March 1, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM</p>
+                <p><strong>Location:</strong> Local Library Meeting Room</p>
+                <p>Join us for an engaging discussion on "Book Title 1"! Share your thoughts and insights over a cup of tea. Everyone is welcome!</p>
+            </div>
+            <div class="event-card">
+                <h3>🖊️ Author Event: Meet Author 1</h3>
+                <p><strong>Date:</strong> March 15, 2024</p>
+                <p><strong>Time:</strong> 5:00 PM</p>
+                <p><strong>Location:</strong> Local Bookstore</p>
+                <p>Donot miss this chance to meet Author 1! Get your books signed and enjoy a lively conversation about their writing journey.</p>
+            </div>
+            <div class="event-card">
+                <h3>☕ Monthly Meetup: Open Discussion</h3>
+                <p><strong>Date:</strong> March 22, 2024</p>
+                <p><strong>Time:</strong> 7:00 PM</p>
+                <p><strong>Location:</strong> Coffee Shop</p>
+                <p>Join us for our monthly meetup! It is a relaxed environment where you can share your recent reads and recommendations.</p>
+            </div>
+        </div>
 
         <h2>Past Events</h2>
-        <ul>
-            <li>February 2024: "Book Title 2" Discussion</li>
-            <li>January 2024: "Book Title 3" Author Signing</li>
+        <ul class="past-events">
+            <li>📖 February 2024: "Book Title 2" Discussion</li>
+            <li>✍️ January 2024: "Book Title 3" Author Signing</li>
         </ul>
     </div>
 

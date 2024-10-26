@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/siteplan-large.css">
     <link rel="stylesheet" href="style/siteplan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Tales & Tea - Reviews</title>
-    <meta name="description" content="Book reviews and ratings from Tales & Tea members.">
+    <meta name="description" content="Read and submit reviews for your favorite books.">
     <meta name="author" content="Eeshah Waheed">
     <script src="script/siteplan.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Tales & Tea</h1>
+        <h2><img src="image/logo.webp" alt="Tales & Tea Logo" class="logo"></h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,41 +26,48 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="container">
-        <h2>Member Reviews</h2>
+        <h2>📝 Reviews</h2>
+        <p>Welcome to the reviews page! Here, you can read reviews from fellow members and share your thoughts on your favorite books. 📖✨</p>
 
-        <div class="review">
-            <h3>Book Title 1</h3>
-            <p><strong>Rating:</strong> ★★★★☆</p>
-            <p><strong>Review:</strong> "This book was captivating and well-written. I couldn’t put it down!"</p>
+        <div class="reviews-section">
+            <h3>Recent Reviews</h3>
+            <div class="review-item">
+                <p><strong>Jane Doe</strong> - ⭐⭐⭐⭐⭐</p>
+                <p>"A captivating tale that kept me on the edge of my seat! Highly recommend for anyone who loves thrillers!"</p>
+            </div>
+            <div class="review-item">
+                <p><strong>John Smith</strong> - ⭐⭐⭐⭐</p>
+                <p>"A beautiful story about friendship and resilience. The characters felt so real!"</p>
+            </div>
+            <div class="review-item">
+                <p><strong>Alice Johnson</strong> - ⭐⭐⭐⭐⭐</p>
+                <p>"An unforgettable journey through time. This book has changed the way I see history!"</p>
+            </div>
         </div>
 
-        <div class="review">
-            <h3>Book Title 2</h3>
-            <p><strong>Rating:</strong> ★★★☆☆</p>
-            <p><strong>Review:</strong> "An interesting read, but it could have been better developed."</p>
+        <div class="submit-review">
+            <h3>💬 Submit Your Review</h3>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                
+                <label for="rating">Your Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+                
+                <button type="submit">Submit Review</button>
+            </form>
         </div>
-
-        <h2>Submit Your Review</h2>
-        <form id="reviewForm">
-            <label for="bookTitle">Book Title:</label>
-            <input type="text" id="bookTitle" name="bookTitle" required>
-
-            <label for="rating">Rating:</label>
-            <select id="rating" name="rating" required>
-                <option value="1">★</option>
-                <option value="2">★★</option>
-                <option value="3">★★★</option>
-                <option value="4">★★★★</option>
-                <option value="5">★★★★★</option>
-            </select>
-
-            <label for="reviewText">Review:</label>
-            <textarea id="reviewText" name="reviewText" required></textarea>
-
-            <button type="submit">Submit Review</button>
-        </form>
     </div>
 
     <footer> 
@@ -66,3 +76,4 @@
     </footer>
 </body>
 </html>
+

@@ -1,0 +1,31 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #6A5ACD; /* Use your primary color */
+}
+
+.resource-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.resource-list li {
+    background-color: #ffffff; /* White background for items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Inner padding */
+    margin: 10px 0; /* Space between items */
+}
+
+.resource-list a {
+    color: #6A5ACD; /* Primary color for links */
+    text-decoration: none; /* No underline */
+}
+
+.resource-list a:hover {
+    color: #FF6347; /* Change color on hover */
+}
