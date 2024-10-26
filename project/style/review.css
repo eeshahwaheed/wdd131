@@ -3,47 +3,47 @@
 }
 
 .review-item {
-    background-color: #ffffff; /* White background for review items */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 15px; /* Inner padding */
-    margin: 10px 0; /* Space between reviews */
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 15px; 
+    margin: 10px 0;
 }
 
 .submit-review {
-    background-color: #f9f9f9; /* Light background for the form */
-    padding: 20px; /* Padding around the form */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 10px; 
 }
 
 .submit-review form {
     display: flex;
-    flex-direction: column; /* Stack labels and inputs */
+    flex-direction: column; 
 }
 
 .submit-review label {
-    margin-top: 10px; /* Space above labels */
+    margin-top: 10px;
 }
 
 .submit-review input, 
 .submit-review textarea, 
 .submit-review select {
-    padding: 10px; /* Inner padding for inputs */
-    margin-top: 5px; /* Space between label and input */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 5px; /* Rounded corners */
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
 }
 
 .submit-review button {
-    margin-top: 15px; /* Space above button */
-    padding: 10px; /* Padding for button */
-    background-color: #6A5ACD; /* Primary color */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 15px; 
+    padding: 10px; 
+    background-color: #6A5ACD; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 .submit-review button:hover {
-    background-color: #FF6347; /* Secondary color on hover */
+    background-color: #FF6347; 
 }
