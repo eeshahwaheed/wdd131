@@ -1,46 +1,101 @@
+/* style/siteplan.css */
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif; /* Body text */
     margin: 0;
-    padding: 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background for contrast */
 }
 
-.container {
-    max-width: 800px; 
-    margin: auto;
+header {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between logo and nav */
+    background-color: #6A5ACD; /* Primary color for header */
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.logo {
+    max-width: 100px; /* Set a maximum width for the logo */
+    height: auto; /* Keep the aspect ratio */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to grow and fill space */
+    text-align: right; /* Align nav items to the right */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 h1, h2 {
-    color: #6A5ACD; 
+    font-family: 'Georgia', serif; /* Headings */
+    color: #6A5ACD; /* Primary color for headings */
 }
 
-h1 {
-    font-size: 2.5em;
+.container {
+    padding: 20px;
 }
 
-h2 {
-    font-size: 2em;
-    margin-top: 20px;
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-p, ul {
-    font-size: 1em;
-    line-height: 1.6;
+figure {
+    text-align: center;
+    margin: 15px;
+    background-color: #fff; /* Background for figures */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 
-ul {
-    padding-left: 20px;
+img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
-.wireframe img {
-    width: 80%; 
-    margin: 20px 0;
+a {
+    color: #6A5ACD; /* Primary color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6347; /* Secondary color for hover effect */
 }
 
 footer {
+    background-color: #6A5ACD; /* Primary color for footer */
+    color: white;
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #555;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.tagline {
+    font-size: 1.2em; /* Adjust size as needed */
+    color: #FF6347; /* Use secondary color for emphasis */
+    margin-top: 10px; /* Space between logo and tagline */
 }

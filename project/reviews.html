@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Tales & Tea - Reviews</title>
+    <meta name="description" content="Book reviews and ratings from Tales & Tea members.">
+    <meta name="author" content="Eeshah Waheed">
+    <script src="script/siteplan.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tales & Tea</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Member Reviews</h2>
+
+        <div class="review">
+            <h3>Book Title 1</h3>
+            <p><strong>Rating:</strong> ★★★★☆</p>
+            <p><strong>Review:</strong> "This book was captivating and well-written. I couldn’t put it down!"</p>
+        </div>
+
+        <div class="review">
+            <h3>Book Title 2</h3>
+            <p><strong>Rating:</strong> ★★★☆☆</p>
+            <p><strong>Review:</strong> "An interesting read, but it could have been better developed."</p>
+        </div>
+
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm">
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="1">★</option>
+                <option value="2">★★</option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★</option>
+            </select>
+
+            <label for="reviewText">Review:</label>
+            <textarea id="reviewText" name="reviewText" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <footer> 
+        <p>&copy; <span id="currentyear"></span> 🖤 Eeshah Waheed 🖤 Islamabad, Pakistan</p>
+        <p id="lastModified"></p> 
+    </footer>
+</body>
+</html>
